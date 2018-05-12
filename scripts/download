@@ -6,13 +6,14 @@ root_dir="${HOME}/.bitcore"
 platform=`uname -a | awk '{print tolower($1)}'`
 arch=`uname -m`
 version="0.12.2"
-url="https://bamboo.dash.org/browse/DASHL-REL-13/artifact/JOB1/gitian-linux-dash-dist"
+# url="https://bamboo.dash.org/browse/DASHL-REL-13/artifact/JOB1/gitian-linux-dash-dist"
+url="https://github.com/dashpay/dash/releases/download/v0.12.2.3"
 
 if [ "${platform}" == "linux" ]; then
     if [ "${arch}" == "x86_64" ]; then
-        tarball_name="dashcore-${version}-linux64.tar.gz"
+        tarball_name="dashcore-0.12.1.0-linux64.tar.gz"
     elif [ "${arch}" == "x86_32" ]; then
-        tarball_name="dashcore-${version}-linux32.tar.gz"
+        tarball_name="dashcore-0.12.1.0-linux32.tar.gz"
     fi
 elif [ "${platform}" == "darwin" ]; then
     tarball_name="dashcore-${version}-osx64.tar.gz"
