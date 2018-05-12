@@ -4,8 +4,8 @@
   "author": "BitPay <dev@bitpay.com>",
   "version": "3.0.6",
   "main": "./index.js",
-  "repository": "git://github.com/dashevo/bitcore-node-dash.git",
-  "homepage": "https://github.com/dashevo/bitcore-node-dash",
+  "repository": "git://github.com/dukle/dashcore-node.git",
+  "homepage": "https://github.com/dukle/dashcore-node",
   "bugs": {
     "url": "https://github.com/dashevo/bitcore-node-dash/issues"
   },
@@ -46,7 +46,7 @@
   ],
   "dependencies": {
     "async": "^1.3.0",
-    "bitcoind-rpc-dash": "^1.0.1",
+    "@dashevo/dashd-rpc": "*",
     "@dashevo/dashcore-lib": "*",
     "body-parser": "^1.13.3",
     "colors": "^1.1.2",
