@@ -94,8 +94,8 @@ describe('#add', function() {
       var callCount = 0;
       var oldPackage = {
         dependencies: {
-          'bitcore-lib-dash': '^v0.13.17',
-          'bitcore-node-dash': '^v0.2.0'
+          '@dashevo/dashcore-lib': '*',
+          'dukle/dashcore-node': '*'
         }
       };
       var spawn = sinon.stub().returns({

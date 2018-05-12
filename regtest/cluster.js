@@ -4,9 +4,9 @@ var path = require('path');
 var async = require('async');
 var spawn = require('child_process').spawn;
 
-var BitcoinRPC = require('bitcoind-rpc-dash');
+var BitcoinRPC = require('@dashevo/dashd-rpc');
 var rimraf = require('rimraf');
-var bitcore = require('bitcore-lib-dash');
+var bitcore = require('@dashevo/dashcore-lib');
 var chai = require('chai');
 var should = chai.should();
 
